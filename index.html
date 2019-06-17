@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Calculator</title>
+    <meta name="description" content="Rent a car task solution by Raven">
+<!--    <link rel="stylesheet" href="./style.css"> -->
+    <style>
+        label {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <h1>Primitive calculator</h1>
+
+    <form name="calculator" id="calculator" action="" method="POST" onsubmit="calculateMe(this); return false">
+        <fieldset>
+            <legend>Expression you want to calculate</legend>
+            <label for="firstNumber">1'st number</label>
+            <input id="firstNumber" class="number" name="firstNumber" type="text">
+
+            <label for="operator">operator</label>
+            <select id="operator" name="operator">
+                <option value="+">+</option>
+                <option value="-">-</option>
+                <option value="*">x</option>
+                <option value="/">/</option>
+            </select>
+
+            <label for="secondNumber">2'nd number</label>
+            <input id="secondNumber" class="number" name="secondNumber" type="text">
+
+            <input id="btnCalculate" type="submit" value="=">
+            
+            <span id="result"></span>
+        </fieldset>
+    </form>
+
+    <script type="text/javascript" src="./calculator.js"></script>
+</body>
+</html>
